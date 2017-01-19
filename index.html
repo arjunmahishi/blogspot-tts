@@ -14,9 +14,15 @@
 			The voice consists of sound made by a human being using the vocal folds for talking, reading, singing, laughing, crying, screaming etc. The human voice is specifically a part of human sound production in which the vocal folds (vocal cords) are the primary sound source.
 			</p>
 			<div class="controls row">
-				<button class="btn" id="speak"><i class="fa fa-play" aria-hidden="true"></i></button>
-				<button class="btn" id="pause"><i class="fa fa-pause" aria-hidden="true"></i></button>
-				<button class="btn" id="stop"><i class="fa fa-stop" aria-hidden="true"></i></button>
+				<button class="btn" id="speak" onclick="startSpeech()">
+					<i class="fa fa-play" aria-hidden="true"></i>
+				</button>
+				<button class="btn" id="pause" onclick="pauseSpeech()">
+					<i class="fa fa-pause" aria-hidden="true"></i>
+				</button>
+				<button class="btn" id="stop" onclick="stopSpeech()">
+					<i class="fa fa-stop" aria-hidden="true"></i>
+				</button>
 			</div>
 		</div>
 	</body>

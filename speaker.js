@@ -20,10 +20,10 @@ function stopSpeech(){
 	controlTracker = 0;
 }
 
-const speakButton = document.getElementById("speak");
-const stopButton = document.getElementById("stop");
-const pauseButton = document.getElementById("pause");
-
-speakButton.addEventListener("click", startSpeech);
-pauseButton.addEventListener("click", pauseSpeech);
-stopButton.addEventListener("click", stopSpeech);
+// const speakButton = document.getElementById("speak");
+// const stopButton = document.getElementById("stop");
+// const pauseButton = document.getElementById("pause");
+//
+// speakButton.addEventListener("click", startSpeech);
+// pauseButton.addEventListener("click", pauseSpeech);
+// stopButton.addEventListener("click", stopSpeech);
