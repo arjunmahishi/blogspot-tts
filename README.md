@@ -3,5 +3,8 @@ A text-to-speech interface to let users 'listen' to blog posts instead of readin
 
 [Click here](https://arjunmahishi.github.io/blogspot-tts/) for demo
 
+# Instructions to install on Blogspot
+coming soon
+
 # Credits 
 The ResponsiveVoice API was downloaded from [http://responsivevoice.org/](http://responsivevoice.org/). My code is just a wrapper built on top of it.
