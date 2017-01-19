@@ -3,7 +3,8 @@ var controlTracker = 0;
 function startSpeech(){
 	if (controlTracker == 0){
 		text = $(".main-content-body").text();
-		responsiveVoice.speak(text);
+		lang = $(".langSelector").val();
+		responsiveVoice.speak(text, lang);
 		controlTracker ++;
 	}
 	else{
@@ -19,11 +20,3 @@ function stopSpeech(){
 	responsiveVoice.cancel();
 	controlTracker = 0;
 }
-
-// const speakButton = document.getElementById("speak");
-// const stopButton = document.getElementById("stop");
-// const pauseButton = document.getElementById("pause");
-//
-// speakButton.addEventListener("click", startSpeech);
-// pauseButton.addEventListener("click", pauseSpeech);
-// stopButton.addEventListener("click", stopSpeech);
