@@ -1,0 +1,25 @@
+<html>
+<head>
+	<script src="http://code.responsivevoice.org/responsivevoice.js"></script>
+</head>
+<body>
+
+<textarea type="text" id="text" placeholder="Insert text here.."></textarea>
+<button onclick="speaker()">SPEAK</button>
+<button onclick="stopSpeech()">STOP</button>
+<p id="speakable">
+	hello world
+</p>
+
+</body>
+<script>
+function speaker(){
+	text = document.getElementById('text').value;
+	newText = document.getElementById("speakable").innerHTML;
+	responsiveVoice.speak(newText);
+}
+function stopSpeech(){
+	responsiveVoice.cancel();
+}
+</script>
+</html>
