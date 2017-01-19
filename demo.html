@@ -2,15 +2,22 @@
 <head>
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	<script src="http://code.responsivevoice.org/responsivevoice.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 </head>
 <body>
 
-<div class="main-content-body">
-	The voice consists of sound made by a human being using the vocal folds for talking, reading, singing, laughing, crying, screaming etc. The human voice is specifically a part of human sound production in which the vocal folds (vocal cords) are the primary sound source.
-</div>
+	<div class="main-content-body col-xs-offset-4 col-xs-5">
+		<p class="row lead">
+		The voice consists of sound made by a human being using the vocal folds for talking, reading, singing, laughing, crying, screaming etc. The human voice is specifically a part of human sound production in which the vocal folds (vocal cords) are the primary sound source.
+		</p>
+		<div class="row">
+			<button class="btn btn-info" id="speak">SPEAK</button>
+			<button class="btn btn-info" id="pause">PAUSE</button>
+			<button class="btn btn-info" id="stop">STOP</button>
+		</div>
+	</div>
 
-<button id="speak">SPEAK</button>
-<button id="stop">STOP</button>
+
 </body>
 <script src="./speaker.js"></script>
 </html>
