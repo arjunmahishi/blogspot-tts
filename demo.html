@@ -1,25 +1,16 @@
 <html>
 <head>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	<script src="http://code.responsivevoice.org/responsivevoice.js"></script>
 </head>
 <body>
 
-<textarea type="text" id="text" placeholder="Insert text here.."></textarea>
-<button onclick="speaker()">SPEAK</button>
-<button onclick="stopSpeech()">STOP</button>
-<p id="speakable">
-	hello world
-</p>
+<div class="main-content-body">
+	The voice consists of sound made by a human being using the vocal folds for talking, reading, singing, laughing, crying, screaming etc. The human voice is specifically a part of human sound production in which the vocal folds (vocal cords) are the primary sound source.
+</div>
 
+<button id="speak">SPEAK</button>
+<button id="stop">STOP</button>
 </body>
-<script>
-function speaker(){
-	text = document.getElementById('text').value;
-	newText = document.getElementById("speakable").innerHTML;
-	responsiveVoice.speak(newText);
-}
-function stopSpeech(){
-	responsiveVoice.cancel();
-}
-</script>
+<script src="./speaker.js"></script>
 </html>
